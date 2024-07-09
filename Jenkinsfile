@@ -1,7 +1,12 @@
 @Library('shared-library') _
 
-env.COMPONENT="PAYMENT"   // this is how variable is declared and this we can call from shared library
+node('ws') {
 
-// call is the function that will be called by default. so, we are declaring the entire pipeline in the vars/python.groovy
+env.COMPONENT="payment"   // this is how variable is declared and this we can call from shared library
+env.APPTYPE="python"
+env.TAG_NAME="latest"
 
 python()
+
+      
+}
