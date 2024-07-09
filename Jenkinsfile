@@ -6,7 +6,7 @@ env.COMPONENT="payment"   // this is how variable is declared and this we can ca
 env.APPTYPE="python"
 env.TAG_NAME="latest"
 
-python()
+docker()
 
       
 }
